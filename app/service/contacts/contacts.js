@@ -44,8 +44,10 @@
       };
 
       // Cria o método '.id'
-      Contacts.id = () => {
-        return null; // Retorna o Contato do ID passado
+      Contacts.id = (id) => {
+        return ContactsList.find((contact) => { // Busca o contato com o id passado e o retorna
+          return contact.id === id; // Retorna o Contato do ID passado
+        })
       }
 
       return Contacts; // Retorna o serviço
