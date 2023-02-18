@@ -1,4 +1,4 @@
-describe('Grupo de Testes', function() {
+describe('Grupo de Testes', () => {
   let TestContacts; // Variável auxiliar
 
   const TestContactsList = [  // Constante com Lista de Contatos - JSON
@@ -42,7 +42,7 @@ describe('Grupo de Testes', function() {
                                                       antes da especificação no bloco 'it()' */
 
   // Injeta o Serviço
-  beforeEach(inject(function(Contacts) { /* O 'inject' é um método que cria uma nova instância
+  beforeEach(inject((Contacts) => { /* O 'inject' é um método que cria uma nova instância
                                             injetora para os testes. Nesse caso, em outras
                                             palavras, ele injeta o serviço 'Contacts' no nosso
                                             caso de teste.
@@ -56,23 +56,23 @@ describe('Grupo de Testes', function() {
   }));
 
   // Primeiro Caso de Teste
-  it('Serviço OK', function() { /* O método 'it' (do inglês isto), é usado para dizer que
+  it('Serviço - OK', () => { /* O método 'it' (do inglês isto), é usado para dizer que
                                    algo (dentro do seu escopo) deve ocorrer, ou seja, define
                                    um caso de teste. */
     expect(TestContacts) // O método 'expect' espera e retorna uma resposta.
       .toBeDefined(); // O método 'toBeDefined' testa e retorna se o serviço foi definido.
   });
 
-  describe('Todos Contatos', function() {
+  describe('Todos Contatos', () => {
 
     // Segundo Caso de Teste
-    it('Método OK', function() {
+    it('Método "all" - OK', () => {
       expect(TestContacts.all) // O método 'expect' espera e retorna uma resposta.
         .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.all' foi definido.
     });
 
     // Terceiro Caso de Teste
-    it('Lista de Contatos OK', function() {
+    it('Lista de Contatos - OK', () => {
       expect(TestContacts.all()) // O método 'expect' espera e retorna uma resposta.
         .toEqual(TestContactsList) /* O método 'toEqual' testa se o retorno do método
                                       '.all' é igual a constante 'TestContactsList' */
@@ -80,10 +80,10 @@ describe('Grupo de Testes', function() {
     
   });
 
-  describe('Contato por ID', function() {
+  describe('Contato por ID', () => {
 
     // Quarto Caso de Teste
-    it('Método OK', function() {
+    it('Método "id" - OK', () => {
       expect(TestContacts.id) // O método 'expect' espera e retorna uma resposta.
         .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.id' foi definido.
     });
