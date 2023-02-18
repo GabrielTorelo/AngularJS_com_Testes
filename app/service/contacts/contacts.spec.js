@@ -32,6 +32,14 @@ describe('Grupo de Testes', () => {
     }
   ]
 
+  const TestSingleContact = {
+    "id": 2,
+    "nome": "Paulo Yuri da Rosa",
+    "idade": 23,
+    "email": "paulo_yuri_darosa@br.pwc.com",
+    "senha": "c0xsjwPxJG"
+  };
+
   // Chama o Módulo 'api.contacts'
   beforeEach(angular.mock.module('api.contacts')); /* O 'beforeEach' é um método chamado antes
                                                       de qualquer execução de teste. Ou seja,
@@ -86,6 +94,13 @@ describe('Grupo de Testes', () => {
     it('Método "id" - OK', () => {
       expect(TestContacts.id) // O método 'expect' espera e retorna uma resposta.
         .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.id' foi definido.
+    });
+
+    // Quinto Caso de Teste
+    it('ID Retorna o Contato - OK', () => {
+      expect(TestContacts.id(2)) // O método 'expect' espera e retorna uma resposta.
+        .toEqual(TestSingleContact) /* O método 'toEqual' testa se o retorno do método '.id'
+                                       é igual ao contato da constante 'TestSingleContact' */
     });
 
   })
