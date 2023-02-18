@@ -3,10 +3,15 @@
 
     // Cria o Módulo 'api.contacts'
 	angular.module('api.contacts', [])
-        .factory('Contacts', function() { /* O método 'factory' cria um novo serviço.
-                                             Nesse caso, cria o serviço 'Contacts'. */
-		    var Contacts = {}; // Lista de Contatos - JSON
+    .factory('Contacts', function() { /* O método 'factory' cria um novo serviço.
+                                         Nesse caso, cria o serviço 'Contacts'. */
+      let Contacts = {};
 
-		    return Contacts; // Retorna o serviço
-	});
+      // Retorna Lista de Contatos
+      Contacts.all = function() {
+        return null;
+      };
+
+      return Contacts; // Retorna o serviço
+	  });
 })();
