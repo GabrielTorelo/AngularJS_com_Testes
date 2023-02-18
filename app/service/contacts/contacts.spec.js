@@ -1,5 +1,5 @@
 describe('Grupo de Testes', function() {
-  var TestContacts; // Variável auxiliar
+  let TestContacts; // Variável auxiliar
 
   // Chama o Módulo 'api.contacts'
   beforeEach(angular.mock.module('api.contacts')); /* O 'beforeEach' é um método chamado antes
@@ -30,6 +30,16 @@ describe('Grupo de Testes', function() {
                                    um caso de teste. */
     expect(TestContacts) // O método 'expect' espera e retorna uma resposta.
       .toBeDefined(); // O método 'toBeDefined' testa e retorna se o serviço foi definido.
+  });
+
+  describe('Todos Contatos', function() {
+
+    // Segundo Caso de Teste
+    it('Método OK', function() {
+      expect(TestContacts.all) // O método 'expect' espera e retorna uma resposta.
+        .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.all' foi definido.
+    });
+    
   });
 
 }); /* O 'describe' é um agrupador de casos de Teste. 
