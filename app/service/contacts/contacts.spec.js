@@ -100,7 +100,17 @@ describe('Grupo de Testes', () => {
     it('ID Retorna o Contato - OK', () => {
       expect(TestContacts.id(2)) // O método 'expect' espera e retorna uma resposta.
         .toEqual(TestSingleContact) /* O método 'toEqual' testa se o retorno do método '.id'
-                                       é igual ao contato da constante 'TestSingleContact' */
+                                       é igual ao contato da constante 'TestSingleContact'. */
+    });
+
+    // Sexto Caso de Teste
+    it('ID não existe - OK', () => {
+      expect(TestContacts.id('INVÁLIDO')) /* O método 'expect' espera e retorna uma resposta.
+                                             Repare que é passado para o método '.id' um id
+                                             que não existe na lista de contatos. */
+        .not.toBeDefined() /* O método 'not', junto com o 'toBeDefined', retorna verdadeiro
+                              (ou seja, 'SUCCESS' no teste) caso o 'id' passado não exista
+                              na Lista de Contatos. */
     });
 
   })
