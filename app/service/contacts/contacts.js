@@ -16,21 +16,21 @@
             "senha": "aUdxiJwstR"
         },
         {
-            "id": "2",
+            "id": 2,
             "nome": "Paulo Yuri da Rosa",
             "idade": 23,
             "email": "paulo_yuri_darosa@br.pwc.com",
             "senha": "c0xsjwPxJG"
         },
         {
-            "id": "3",
+            "id": 3,
             "nome": "Benedito Benício Gabriel Peixoto",
             "idade": 27,
             "email": "benedito_peixoto@arysta.com.br",
             "senha": "ytTA2lySWu"
         },
         {
-            "id": "4",
+            "id": 4,
             "nome": "Diego Cláudio Oliver Cardoso",
             "idade": 33,
             "email": "diegoclaudiocardoso@smbcontabil.com.br",
