@@ -36,12 +36,17 @@
             "email": "diegoclaudiocardoso@smbcontabil.com.br",
             "senha": "bucpOXeoK4"
         }
-    ]
+      ]
 
       // Cria o método '.all'
       Contacts.all = function() {
         return ContactsList; // Retorna Lista de Contatos
       };
+
+      // Cria o método '.id'
+      Contacts.id = function() {
+        return null; // Retorna o Contato do ID passado
+      }
 
       return Contacts; // Retorna o serviço
 	  });
