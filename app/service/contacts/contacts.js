@@ -1,9 +1,9 @@
-(function() {
+(() => {
 	'use strict';
 
   // Cria o Módulo 'api.contacts'
 	angular.module('api.contacts', [])
-    .factory('Contacts', function() { /* O método 'factory' cria um novo serviço.
+    .factory('Contacts', () => { /* O método 'factory' cria um novo serviço.
                                          Nesse caso, cria o serviço 'Contacts'. */
       let Contacts = {};
 
@@ -39,12 +39,12 @@
       ]
 
       // Cria o método '.all'
-      Contacts.all = function() {
+      Contacts.all = () => {
         return ContactsList; // Retorna Lista de Contatos
       };
 
       // Cria o método '.id'
-      Contacts.id = function() {
+      Contacts.id = () => {
         return null; // Retorna o Contato do ID passado
       }
 
