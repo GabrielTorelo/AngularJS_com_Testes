@@ -1,7 +1,7 @@
 describe('Grupo de Testes', () => {
-  let TestContacts; // Variável auxiliar
+  let TestContacts; // Variável auxiliar.
 
-  const TestContactsList = [  // Constante com Lista de Contatos - JSON
+  const TestContactsList = [  // Constante com Lista de Contatos - JSON.
     {
         "id": 1,
         "nome": "Calebe Tiago Arthur da Luz",
@@ -32,7 +32,7 @@ describe('Grupo de Testes', () => {
     }
   ]
 
-  const TestSingleContact = {
+  const TestSingleContact = {  // Constante com Contato Único - JSON.
     "id": 2,
     "nome": "Paulo Yuri da Rosa",
     "idade": 23,
@@ -47,7 +47,7 @@ describe('Grupo de Testes', () => {
                                                       configuração antes do inicio dos testes,
                                                       deve-se utilizar esse método.
                                                       Tip: Permite que você execute algum código
-                                                      antes da especificação no bloco 'it()' */
+                                                      antes da especificação no bloco 'it()'. */
 
   // Injeta o Serviço
   beforeEach(inject((Contacts) => { /* O 'inject' é um método que cria uma nova instância
@@ -83,7 +83,7 @@ describe('Grupo de Testes', () => {
     it('Lista de Contatos - OK', () => {
       expect(TestContacts.all()) // O método 'expect' espera e retorna uma resposta.
         .toEqual(TestContactsList) /* O método 'toEqual' testa se o retorno do método
-                                      '.all' é igual a constante 'TestContactsList' */
+                                      '.all' é igual a constante 'TestContactsList'. */
     });
     
   });
