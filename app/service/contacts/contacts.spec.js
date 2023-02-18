@@ -80,6 +80,16 @@ describe('Grupo de Testes', function() {
     
   });
 
+  describe('Contato por ID', function() {
+
+    // Quarto Caso de Teste
+    it('Método OK', function() {
+      expect(TestContacts.id) // O método 'expect' espera e retorna uma resposta.
+        .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.id' foi definido.
+    });
+
+  })
+
 }); /* O 'describe' é um agrupador de casos de Teste. 
        Ao executar o teste é feito um alinhamento
        por tag 'describe' existente.
