@@ -36,6 +36,7 @@ Inicie os testes:
 | karma-cli             | `=2.0.0` |
 | jasmine-core          | `^4.5.0` |
 | karma-jasmine         | `^5.1.0` |
+| karma-spec-reporter   | `^0.0.3` |
 | karma-chrome-launcher | `^3.1.1` |
 |||
 | angular               | `^1.8.3` |
