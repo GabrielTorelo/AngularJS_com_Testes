@@ -64,7 +64,7 @@ describe('Grupo de Testes', () => {
   }));
 
   // Primeiro Caso de Teste
-  it('Serviço - OK', () => { /* O método 'it' (do inglês isto), é usado para dizer que
+  it('Serviço', () => { /* O método 'it' (do inglês isto), é usado para dizer que
                                    algo (dentro do seu escopo) deve ocorrer, ou seja, define
                                    um caso de teste. */
     expect(TestContacts) // O método 'expect' espera e retorna uma resposta.
@@ -74,13 +74,13 @@ describe('Grupo de Testes', () => {
   describe('Todos Contatos', () => {
 
     // Segundo Caso de Teste
-    it('Método "all" - OK', () => {
+    it('Método "all"', () => {
       expect(TestContacts.all) // O método 'expect' espera e retorna uma resposta.
         .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.all' foi definido.
     });
 
     // Terceiro Caso de Teste
-    it('Lista de Contatos - OK', () => {
+    it('Lista de Contatos', () => {
       expect(TestContacts.all()) // O método 'expect' espera e retorna uma resposta.
         .toEqual(TestContactsList) /* O método 'toEqual' testa se o retorno do método
                                       '.all' é igual a constante 'TestContactsList'. */
@@ -91,20 +91,20 @@ describe('Grupo de Testes', () => {
   describe('Contato por ID', () => {
 
     // Quarto Caso de Teste
-    it('Método "id" - OK', () => {
+    it('Método "id"', () => {
       expect(TestContacts.id) // O método 'expect' espera e retorna uma resposta.
         .toBeDefined(); // O método 'toBeDefined' testa e retorna se o método '.id' foi definido.
     });
 
     // Quinto Caso de Teste
-    it('ID Retorna o Contato - OK', () => {
+    it('ID Retorna o Contato', () => {
       expect(TestContacts.id(2)) // O método 'expect' espera e retorna uma resposta.
         .toEqual(TestSingleContact) /* O método 'toEqual' testa se o retorno do método '.id'
                                        é igual ao contato da constante 'TestSingleContact'. */
     });
 
     // Sexto Caso de Teste
-    it('ID não existe - OK', () => {
+    it('ID não existe', () => {
       expect(TestContacts.id('INVÁLIDO')) /* O método 'expect' espera e retorna uma resposta.
                                              Repare que é passado para o método '.id' um id
                                              que não existe na lista de contatos. */
