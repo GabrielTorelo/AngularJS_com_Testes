@@ -27,7 +27,7 @@ module.exports = function (config) {
 		preprocessors: {},
 
 		// Gera relatório de resultados dos testes
-		reporters: ["progress"],
+		reporters: ["spec"],
 
 		// Porta do serviço WEB
 		port: 9876,
