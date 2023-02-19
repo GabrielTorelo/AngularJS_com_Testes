@@ -51,15 +51,15 @@ describe('Grupo de Testes', () => {
 
   // Injeta o Serviço
   beforeEach(inject((Contacts) => { /* O 'inject' é um método que cria uma nova instância
-                                            injetora para os testes. Nesse caso, em outras
-                                            palavras, ele injeta o serviço 'Contacts' no nosso
-                                            caso de teste.
-                                            Importante: O nome do parâmetro recebido pela
-                                            função do método 'inject' (Contacts), dever ser
-                                            exatamente igual ao retorno do módulo. */
+                                       injetora para os testes. Nesse caso, em outras
+                                       palavras, ele injeta o serviço 'Contacts' no nosso
+                                       caso de teste.
+                                       Importante: O nome do parâmetro recebido pela
+                                       função do método 'inject' (Contacts), dever ser
+                                       exatamente igual ao retorno do módulo. */
 
-    TestContacts = Contacts; /* Atribui o serviço recebido 'testContact' para
-                                   a variável auxiliar 'testContacts'. */
+    TestContacts = Contacts; /* Atribui o serviço recebido 'Contacts' para
+                                a variável auxiliar 'TestContacts'. */
     
   }));
 

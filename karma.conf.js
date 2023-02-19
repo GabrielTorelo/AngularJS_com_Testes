@@ -14,10 +14,10 @@ module.exports = function (config) {
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-ui-router/release/angular--ui-router.js',
 
-      'app/service/contacts/contacts.js',
+      'app/src/service/contacts/contacts.js',
 
-      'app/app.js',
-      'app/service/contacts/*.spec.js'
+      'app/src/app.js',
+      'app/src/service/contacts/*.spec.js'
     ],
 
 		// Lista de arquivos para não carregar no navegador (excluir)
