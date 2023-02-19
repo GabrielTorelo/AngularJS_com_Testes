@@ -1,13 +1,13 @@
 (() => {
 	'use strict';
 
-  // Cria o Módulo 'api.contacts'
+  // Cria o Módulo 'api.contacts'.
 	angular.module('api.contacts', [])
     .factory('Contacts', () => { /* O método 'factory' cria um novo serviço.
-                                         Nesse caso, cria o serviço 'Contacts'. */
+                                    Nesse caso, cria o serviço 'Contacts'. */
       let Contacts = {};
 
-      const ContactsList = [ // Lista de Contatos - JSON
+      const ContactsList = [ // Lista de Contatos - JSON.
         {
             "id": 1,
             "nome": "Calebe Tiago Arthur da Luz",
@@ -38,18 +38,18 @@
         }
       ]
 
-      // Cria o método '.all'
+      // Cria o método '.all'.
       Contacts.all = () => {
-        return ContactsList; // Retorna Lista de Contatos
+        return ContactsList; // Retorna Lista de Contatos.
       };
 
       // Cria o método '.id'
       Contacts.id = (id) => {
-        return ContactsList.find((contact) => { // Busca o contato com o id passado e o retorna
-          return contact.id === id; // Retorna o Contato do ID passado
+        return ContactsList.find((contact) => { // Busca o contato com o id passado e o retorna.
+          return contact.id === id; // Retorna o Contato do ID passado.
         })
       }
 
-      return Contacts; // Retorna o serviço
+      return Contacts; // Retorna o serviço.
 	  });
 })();
