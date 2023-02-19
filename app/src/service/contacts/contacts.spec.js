@@ -1,4 +1,4 @@
-describe('Grupo de Testes', () => {
+describe('Grupo de Testes - Contatos', () => {
   let TestContacts; // Variável auxiliar.
 
   const TestContactsList = [  // Constante com Lista de Contatos - JSON.
@@ -65,8 +65,8 @@ describe('Grupo de Testes', () => {
 
   // Primeiro Caso de Teste
   it('Serviço', () => { /* O método 'it' (do inglês isto), é usado para dizer que
-                                   algo (dentro do seu escopo) deve ocorrer, ou seja, define
-                                   um caso de teste. */
+                           algo (dentro do seu escopo) deve ocorrer, ou seja, define
+                           um caso de teste. */
     expect(TestContacts) // O método 'expect' espera e retorna uma resposta.
       .toBeDefined(); // O método 'toBeDefined' testa e retorna se o serviço foi definido.
   });
