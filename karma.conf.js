@@ -15,11 +15,11 @@ module.exports = function (config) {
       'node_modules/angular-ui-router/release/angular--ui-router.js',
 
       'src/app/service/contacts/contacts.js',
-      'src/app/filters/filters.js',
+      'src/app/service/filters/filters.js',
 
       'src/app/app.js',
       'src/app/service/contacts/*.spec.js',
-      'src/app/filters/*.spec.js'
+      'src/app/service/filters/*.spec.js'
     ],
 
 		// Lista de arquivos para não carregar no navegador (excluir)
