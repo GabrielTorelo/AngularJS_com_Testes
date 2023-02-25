@@ -33,4 +33,13 @@ describe('Grupo de Testes - Filtros', () => {
       .toBeDefined(); // O método 'toBeDefined' testa e retorna se o serviço foi definido.
   });
 
+  // Segundo Caso de Teste
+  it('Método "dateUStoBrazil"', () => {
+    expect(TestFilters.dateUStoBrazil('2023-02-24')) /* O método 'expect' espera e retorna 
+                                                        uma resposta. */
+      .toEqual('24-02-2023');  /* O método 'toEqual' testa se o retorno do método 
+                                  '.dateUStoBrazil' é igual ao retorno esperado. Nesse caso,
+                                  é esperado converter '2023-02-24' para '24-02-2023'. */
+  });
+
 });
