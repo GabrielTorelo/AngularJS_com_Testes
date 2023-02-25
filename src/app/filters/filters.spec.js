@@ -42,4 +42,29 @@ describe('Grupo de Testes - Filtros', () => {
                                   é esperado converter '2023-02-24' para '24-02-2023'. */
   });
 
-});
+  // Terceiro Caso de Teste
+  it('Formato inválido no Método "dateUStoBrazil"', () => { /* Como temos 2 testes dentro do Caso de
+                                                               Teste, ambos devem retornar 'SUCCESS'
+                                                               para o Caso de Teste ser válido
+                                                               (ou seja, retornar 'SUCCESS'). */
+
+    // Teste 1
+    expect(TestFilters.dateUStoBrazil('02-25-2023')) /* O método 'expect' espera e retorna 
+                                                      uma resposta. Repare que é passado
+                                                      para o método '.dateUStoBrazil' um
+                                                      formato inválido. */
+      .not.toEqual('25-02-2023'); /* O método 'not', junto com o 'toEqual', retorna verdadeiro
+                                    (ou seja, 'SUCCESS' no teste) caso o formato passado seja um
+                                    formato inválido. */
+
+    // Teste 2
+    expect(TestFilters.dateUStoBrazil('02-25-2023'))
+      .toEqual('ERROR_123'); /* Nesse caso, estamos testando se o retorno é 'ERROR_123'
+                                ERROR_123 = "Data inválida" */
+  });
+
+}); /* O 'describe' é um agrupador de casos de Teste. 
+       Ao executar o teste é feito um alinhamento
+       por tag 'describe' existente.
+       Tip: Permite formatar melhor o layout de exibição
+       para acompanhar os testes com maior qualidade. */
