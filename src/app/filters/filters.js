@@ -20,8 +20,8 @@
                                                               [( )] a data que deseja ser filtrada
                                                               (convertida) e o formato desejado. */
         
-        if (_date === date)
-          return 'ERROR_123';
+        if (_date === date) // Verifica se não foi possível filtrar (converter) a data
+          return 'ERROR_123'; // Retorna um erro -> 'ERROR_123'
 
         return _date;
       };
