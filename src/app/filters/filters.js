@@ -19,6 +19,9 @@
                                                               necessário passar entre parênteses
                                                               [( )] a data que deseja ser filtrada
                                                               (convertida) e o formato desejado. */
+        
+        if (_date === date)
+          return 'ERROR_123';
 
         return _date;
       };
